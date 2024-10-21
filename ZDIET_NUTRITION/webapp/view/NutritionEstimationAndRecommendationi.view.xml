@@ -1,0 +1,337 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.NutritionEstimationAndRecommendationi" xmlns="sap.m" xmlns:f="sap.f" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core">
+    <Page showHeader="true" title="Nutrition Estimation and Recommendation" showFooter="true" showNavButton="false">
+        <content>
+            <HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                <items>
+                    <f:Avatar src="" initials="" displayShape="Circle" displaySize="M" imageFitType="Cover"/>
+                    <ToolbarSpacer width="10px"/>
+                    <ObjectIdentifier title="Name" text="Amy Jackson" titleActive="false" visible="true"/>
+                    <ToolbarSpacer width="10px"/>
+                    <ObjectIdentifier title="DOB" text="22.01.1976" titleActive="false" visible="true"/>
+                    <ToolbarSpacer width="10px"/>
+                    <ObjectIdentifier title="Sex" text="Female" titleActive="false" visible="true"/>
+                    <ToolbarSpacer width="10px"/>
+                    <ObjectIdentifier title="Patient ID" text="100002101" titleActive="false" visible="true"/>
+                    <ToolbarSpacer width="10px"/>
+                </items>
+                <layoutData/>
+            </HBox>
+            <HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                <items>
+                    <layout:VerticalLayout width="auto" visible="true" class="sapUiTinyMargin">
+                        <layout:content>
+                            <ObjectListItem intro="BMI" title="" number="24.5" numberUnit="index" numberState="None" type="Active" selected="false" showMarkers="false">
+                                <attributes/>
+                                <firstStatus/>
+                                <secondStatus/>
+                            </ObjectListItem>
+                        </layout:content>
+                    </layout:VerticalLayout>
+                    <layout:VerticalLayout width="auto" visible="true" class="sapUiTinyMargin">
+                        <layout:content>
+                            <ObjectListItem intro="Weight" title="" number="90" numberUnit="kg" numberState="None" type="Active" selected="false" showMarkers="false">
+                                <attributes/>
+                                <firstStatus/>
+                                <secondStatus/>
+                            </ObjectListItem>
+                        </layout:content>
+                    </layout:VerticalLayout>
+                    <layout:VerticalLayout width="auto" visible="true" class="sapUiTinyMargin">
+                        <layout:content>
+                            <ObjectListItem intro="Height" title="" number="190" numberUnit="cm" numberState="None" type="Active" selected="false" showMarkers="false">
+                                <attributes/>
+                                <firstStatus/>
+                                <secondStatus/>
+                            </ObjectListItem>
+                        </layout:content>
+                    </layout:VerticalLayout>
+                    <layout:VerticalLayout width="auto" visible="true" class="sapUiTinyMargin">
+                        <layout:content>
+                            <ObjectListItem intro="Diet Type" title="Normal" number="" numberUnit="index" numberState="None" type="Active" selected="false" showMarkers="false">
+                                <attributes/>
+                                <firstStatus/>
+                                <secondStatus/>
+                            </ObjectListItem>
+                        </layout:content>
+                    </layout:VerticalLayout>
+                    <layout:VerticalLayout width="auto" visible="true" class="sapUiTinyMargin">
+                        <layout:content>
+                            <ObjectListItem intro="SP Diet Type I" title="" number="Regular" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+                                <attributes/>
+                                <firstStatus/>
+                                <secondStatus/>
+                            </ObjectListItem>
+                        </layout:content>
+                    </layout:VerticalLayout>
+                    <layout:VerticalLayout width="auto" visible="true" class="sapUiTinyMargin">
+                        <layout:content>
+                            <ObjectListItem intro="SP Diet Type II" title="" number="NA" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+                                <attributes/>
+                                <firstStatus/>
+                                <secondStatus/>
+                            </ObjectListItem>
+                        </layout:content>
+                    </layout:VerticalLayout>
+                    <Input type="Number" description="Weight +/-" showValueHelp="false" enabled="true" visible="true" width="156.9965362548828px" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0" class="sapUiResponsiveMargin"/>
+                    <Input type="Number" description="in days" showValueHelp="false" enabled="true" visible="true" width="156.9965362548828px" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0" class="sapUiResponsiveMargin"/>
+                </items>
+                <layoutData/>
+            </HBox>
+            <HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                <items>
+                    <ComboBox placeholder="Formula" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                        <items>
+                            <core:Item text="Item" enabled="true" key="Item"/>
+                            <core:Item text="Item" enabled="true" key="Item"/>
+                            <core:Item text="Item" enabled="true" key="Item"/>
+                        </items>
+                    </ComboBox>
+                    <ComboBox placeholder="Balance" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                        <items>
+                            <core:Item text="Item" enabled="true" key="Item"/>
+                            <core:Item text="Item" enabled="true" key="Item"/>
+                            <core:Item text="Item" enabled="true" key="Item"/>
+                        </items>
+                    </ComboBox>
+                    <ToolbarSpacer width="10px"/>
+                    <Text text="Fat" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                    <ToolbarSpacer width="10px"/>
+                    <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                    <ToolbarSpacer width="10px"/>
+                    <Text text="Protein" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                    <ToolbarSpacer width="10px"/>
+                    <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                    <ToolbarSpacer width="10px"/>
+                    <Text text="Carbohydrate" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                    <ToolbarSpacer width="10px"/>
+                    <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                </items>
+                <layoutData/>
+            </HBox>
+            <Text text="Nutrition Requirement" width="243.99307250976562px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+            <Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin">
+                <infoToolbar>
+                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                        <content>
+                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </content>
+                    </Toolbar>
+                </infoToolbar>
+                <headerToolbar/>
+                <columns>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Calorie" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Protein" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Fat" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Carbohydrate" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Calcium" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Phosphor" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Natrium" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Potassium" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+            <ComboBox placeholder="Food Template" editable="true" enabled="true" visible="true" width="415.0000305175781px" valueState="None" maxWidth="100%">
+                <items>
+                    <core:Item text="Item" enabled="true" key="Item"/>
+                    <core:Item text="Item" enabled="true" key="Item"/>
+                    <core:Item text="Item" enabled="true" key="Item"/>
+                </items>
+            </ComboBox>
+            <ScrollContainer horizontal="true" vertical="true" width="100%" height="380.0000305175781px" visible="true">
+                <content>
+                    <Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin">
+                        <infoToolbar>
+                            <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                <content>
+                                    <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                </content>
+                            </Toolbar>
+                        </infoToolbar>
+                        <headerToolbar/>
+                        <columns>
+                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+                                <header>
+                                    <Text text="Food" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                </header>
+                                <footer/>
+                            </Column>
+                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                <header>
+                                    <Text text="Amount" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                </header>
+                                <footer/>
+                            </Column>
+                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                <header>
+                                    <Text text="UOM" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                </header>
+                                <footer/>
+                            </Column>
+                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                <header>
+                                    <Text text="Adjust" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                </header>
+                                <footer/>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem type="Active">
+                                <cells>
+                                    <ObjectIdentifier title="Product Name" text="Product ID" titleActive="false" visible="true"/>
+                                    <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                    <Text text="Text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                    <SegmentedButton width="auto" enabled="true" visible="true">
+                                        <items>
+                                            <SegmentedButtonItem icon="sap-icon://add" text="More" width="auto" enabled="true"/>
+                                            <SegmentedButtonItem icon="sap-icon://less" text="Less" width="auto" enabled="true"/>
+                                        </items>
+                                    </SegmentedButton>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </content>
+            </ScrollContainer>
+            <Text text="Nutrition Estimation" width="243.99307250976562px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+            <Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin">
+                <infoToolbar>
+                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                        <content>
+                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </content>
+                    </Toolbar>
+                </infoToolbar>
+                <headerToolbar/>
+                <columns>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Calorie" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Protein" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Fat" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Carbohydrate" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Calcium" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Phosphor" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Natrium" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                    <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <header>
+                            <Text text="Potassium" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </header>
+                        <footer/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Active">
+                        <cells>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

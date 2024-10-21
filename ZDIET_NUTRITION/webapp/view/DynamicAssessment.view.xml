@@ -1,0 +1,177 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.DynamicAssessment" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<!--<Page showHeader="true" title="Dynamic Assessment" showFooter="true" showNavButton="true" navButtonPress="_onPageNavButtonPress">-->
+	<Page showHeader="true" title="Dynamic Assessment" showFooter="true">
+		<content>
+			<l:FixFlex id="ffAFReport" class="fixFlexVertical">
+				<l:fixContent>
+					<!--<HBox class="sapUiMediumMarginBegin" justifyContent="End">-->
+					<!--	<Button text="Diet Type Assignment" press="._onRouteToDietTypeAssignment" class="sapUiTinyMarginEnd"/>-->
+					<!--	<Button type="Emphasized" text="Nutrition Assessment" press="._onRouteToNutritionAssessment" class="sapUiTinyMarginEnd"/>-->
+					<!--	<Button type="Emphasized" text="Nutrition Estimation" press="._onRouteToNutritionEstimation" class="sapUiTinyMarginEnd"/>-->
+					<!--</HBox>-->
+					<FlexBox direction="Row" class="sapUiMediumMarginBeginEnd sapUiSmallMarginTop" alignContent="Start" alignItems="Start"
+						justifyContent="SpaceBetween">
+						<HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+							visible="true" displayInline="false">
+							<items>
+								<Button text="Structure Search" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+									press="_onButtonPress"/>
+								<MultiInput placeholder="Smart Search" maxTokens="5" enableMultiLineMode="true" showValueHelp="true" enabled="true" visible="true"
+									required="false" valueStateText="Invalid entry" width="766.1284790039062px" valueHelpOnly="false" maxLength="0">
+									<tokens>
+										<Token text="Assement A1" editable="true" selected="true"/>
+										<Token text="Assement A2" editable="true" selected="false"/>
+										<Token text="Assement A3" editable="true" selected="false"/>
+										<Token text="Assement A4" editable="true" selected="false"/>
+										<Token text="Assement A5" editable="true" selected="false"/>
+									</tokens>
+								</MultiInput>
+								<Button text="Confirm" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+							</items>
+							<layoutData/>
+						</HBox>
+					</FlexBox>
+				</l:fixContent>
+				<l:flexContent>
+					<ScrollContainer id="scMain" vertical="true" height="100%" width="auto" class="sapUiSmallMarginBeginEnd">
+						<VBox id="vbAssessmentOptions" class="custLstItm sapUiTinyMarginBeginEnd sapUiTinyMarginTopBottom">
+							<HBox class="secHdrBox" alignItems="Center" justifyContent="SpaceBetween">
+								<HBox alignItems="Center">
+									<core:Icon color="#fff" src="sap-icon://accidental-leave" class="sapUiTinyMarginTopBottom sapUiSmallMarginBeginEnd"/>
+									<Title text="Assessment - options" class="secTitle"/>
+								</HBox>
+								<!--<core:Icon src="{= ${oJMdlEIRConfig>/PersnlInfoExp} === true ? 'sap-icon://collapse' : 'sap-icon://expand'}"-->
+								<core:Icon src="sap-icon://expand"
+									class="secHdrIcon sapUiTinyMarginEnd">
+									<core:customData>
+										<core:CustomData key="CollapExp"></core:CustomData>
+									</core:customData>
+								</core:Icon>
+							</HBox>
+							<core:Fragment id="fgAssessmentOptions" fragmentName="com.sap.build.standard.untitledPrototype.view.fragment.AssessmentOptions" type="XML"/>
+						</VBox>
+						<VBox id="vbAssessmentRadioButtons" class="custLstItm sapUiTinyMarginBeginEnd sapUiTinyMarginTopBottom">
+							<HBox class="secHdrBox" alignItems="Center" justifyContent="SpaceBetween">
+								<HBox alignItems="Center">
+									<core:Icon color="#fff" src="sap-icon://electronic-medical-record" class="sapUiTinyMarginTopBottom sapUiSmallMarginBeginEnd"/>
+									<Title text="Assessment - Radio buttons" class="secTitle"/>
+								</HBox>
+								<core:Icon src="sap-icon://expand"
+									class="secHdrIcon sapUiTinyMarginEnd">
+									<core:customData>
+										<core:CustomData key="CollapExp"></core:CustomData>
+									</core:customData>
+								</core:Icon>
+							</HBox>
+							<core:Fragment id="fgAssessmentRadioButtons" fragmentName="com.sap.build.standard.untitledPrototype.view.fragment.AssessmentRadioButtons" type="XML"/>
+						</VBox>
+						<VBox id="vbAssessmentShortText" class="custLstItm sapUiTinyMarginBeginEnd sapUiTinyMarginTopBottom">
+							<HBox class="secHdrBox" alignItems="Center" justifyContent="SpaceBetween">
+								<HBox alignItems="Center">
+									<core:Icon color="#fff" src="sap-icon://clinical-task-tracker" class="sapUiTinyMarginTopBottom sapUiSmallMarginBeginEnd"/>
+									<Title text="Assessment - Short Text" class="secTitle"/>
+								</HBox>
+								<core:Icon src="sap-icon://expand"
+									class="secHdrIcon sapUiTinyMarginEnd">
+									<core:customData>
+										<core:CustomData key="CollapExp"></core:CustomData>
+									</core:customData>
+								</core:Icon>
+							</HBox>
+							<core:Fragment id="fgAssessmentShortText" fragmentName="com.sap.build.standard.untitledPrototype.view.fragment.AssessmentShortText" type="XML"/>
+						</VBox>
+						<VBox id="vbAssessmentMultipleInput" class="custLstItm sapUiTinyMarginBeginEnd sapUiTinyMarginTopBottom">
+							<HBox class="secHdrBox" alignItems="Center" justifyContent="SpaceBetween">
+								<HBox alignItems="Center">
+									<core:Icon color="#fff" src="sap-icon://electrocardiogram" class="sapUiTinyMarginTopBottom sapUiSmallMarginBeginEnd"/>
+									<Title text="Assessment - Multiple Input" class="secTitle"/>
+								</HBox>
+								<core:Icon src="sap-icon://expand"
+									class="secHdrIcon sapUiTinyMarginEnd">
+									<core:customData>
+										<core:CustomData key="CollapExp"></core:CustomData>
+									</core:customData>
+								</core:Icon>
+							</HBox>
+							<core:Fragment id="fgAssessmentMultipleInput" fragmentName="com.sap.build.standard.untitledPrototype.view.fragment.AssessmentMultipleInput" type="XML"/>
+						</VBox>
+						<VBox id="vbAssessmentRangeInput" class="custLstItm sapUiTinyMarginBeginEnd sapUiTinyMarginTopBottom">
+							<HBox class="secHdrBox" alignItems="Center" justifyContent="SpaceBetween">
+								<HBox alignItems="Center">
+									<core:Icon color="#fff" src="sap-icon://sys-monitor" class="sapUiTinyMarginTopBottom sapUiSmallMarginBeginEnd"/>
+									<Title text="Assessment - Range Input" class="secTitle"/>
+								</HBox>
+								<core:Icon src="sap-icon://expand"
+									class="secHdrIcon sapUiTinyMarginEnd">
+									<core:customData>
+										<core:CustomData key="CollapExp"></core:CustomData>
+									</core:customData>
+								</core:Icon>
+							</HBox>
+							<core:Fragment id="fgAssessmentRangeInput" fragmentName="com.sap.build.standard.untitledPrototype.view.fragment.AssessmentRangeInput" type="XML"/>
+						</VBox>
+						<VBox id="vbAssessmentReadings" class="custLstItm sapUiTinyMarginBeginEnd sapUiTinyMarginTopBottom">
+							<HBox class="secHdrBox" alignItems="Center" justifyContent="SpaceBetween">
+								<HBox alignItems="Center">
+									<core:Icon color="#fff" src="sap-icon://syntax" class="sapUiTinyMarginTopBottom sapUiSmallMarginBeginEnd"/>
+									<Title text="Assessment - Readings" class="secTitle"/>
+								</HBox>
+								<core:Icon src="sap-icon://expand"
+									class="secHdrIcon sapUiTinyMarginEnd">
+									<core:customData>
+										<core:CustomData key="CollapExp"></core:CustomData>
+									</core:customData>
+								</core:Icon>
+							</HBox>
+							<core:Fragment id="fgAssessmentReadings" fragmentName="com.sap.build.standard.untitledPrototype.view.fragment.AssessmentReadings" type="XML"/>
+						</VBox>
+						<VBox id="vbAssessmentDate" class="custLstItm sapUiTinyMarginBeginEnd sapUiTinyMarginTopBottom">
+							<HBox class="secHdrBox" alignItems="Center" justifyContent="SpaceBetween">
+								<HBox alignItems="Center">
+									<core:Icon color="#fff" src="sap-icon://calendar" class="sapUiTinyMarginTopBottom sapUiSmallMarginBeginEnd"/>
+									<Title text="Assessment - Date or Date Range" class="secTitle"/>
+								</HBox>
+								<core:Icon src="sap-icon://expand"
+									class="secHdrIcon sapUiTinyMarginEnd">
+									<core:customData>
+										<core:CustomData key="CollapExp"></core:CustomData>
+									</core:customData>
+								</core:Icon>
+							</HBox>
+							<core:Fragment id="fgAssessmentDate" fragmentName="com.sap.build.standard.untitledPrototype.view.fragment.AssessmentDate" type="XML"/>
+						</VBox>
+						<VBox id="vbAssessmentFreeText" class="custLstItm sapUiTinyMarginBeginEnd sapUiTinyMarginTopBottom">
+							<HBox class="secHdrBox" alignItems="Center" justifyContent="SpaceBetween">
+								<HBox alignItems="Center">
+									<core:Icon color="#fff" src="sap-icon://it-host" class="sapUiTinyMarginTopBottom sapUiSmallMarginBeginEnd"/>
+									<Title text="Assessment - Free text" class="secTitle"/>
+								</HBox>
+								<core:Icon src="sap-icon://expand"
+									class="secHdrIcon sapUiTinyMarginEnd">
+									<core:customData>
+										<core:CustomData key="CollapExp"></core:CustomData>
+									</core:customData>
+								</core:Icon>
+							</HBox>
+							<core:Fragment id="fgAssessmentFreeText" fragmentName="com.sap.build.standard.untitledPrototype.view.fragment.AssessmentFreeText" type="XML"/>
+						</VBox>
+					</ScrollContainer>
+				</l:flexContent>
+			</l:FixFlex>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button icon="sap-icon://menu" press="_onOpenAction"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

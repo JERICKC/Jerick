@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+	<VBox alignItems="Stretch" direction="Column" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+		visible="true" displayInline="false">
+		<items>
+			<HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+				visible="true" displayInline="false">
+				<items>
+					<Input placeholder="From" type="Text" showValueHelp="false" enabled="true" visible="true" width="405.0000305175781px" valueHelpOnly="false"
+						required="false" valueStateText="Invalid entry" maxLength="0"/>
+					<Input placeholder="To" type="Text" showValueHelp="false" enabled="true" visible="true" width="415.0000305175781px" valueHelpOnly="false"
+						required="false" valueStateText="Invalid entry" maxLength="0"/>
+				</items>
+				<layoutData/>
+			</HBox>
+		</items>
+		<layoutData/>
+	</VBox>
+</core:FragmentDefinition>

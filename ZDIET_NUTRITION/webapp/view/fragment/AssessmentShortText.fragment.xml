@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+	<VBox alignItems="Stretch" direction="Column" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+		visible="true" displayInline="false">
+		<items>
+			<Input type="Text" description="Short Text" showValueHelp="false" enabled="true" visible="true" height="15rem" width="1232.00000000px"
+				valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+		</items>
+		<layoutData/>
+	</VBox>
+</core:FragmentDefinition>

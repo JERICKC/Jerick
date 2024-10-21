@@ -1,0 +1,63 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+	<!--<l:Grid defaultSpan="L3 M3 S6" class="sapUiSmallMarginTop">-->
+		<!--<l:content>-->
+			<VBox alignItems="Stretch" direction="Column" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+				visible="true" displayInline="false">
+				<items>
+					<HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+						visible="true" displayInline="false">
+						<items>
+							<CheckBox text="Option A" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+								wrapping="false" useEntireWidth="true"/>
+							<ToolbarSpacer width="20px"/>
+							<!--<Text text="Long Description of Option" width="1140px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"-->
+							<Text text="Long Description of Option" class="sapUiTinyMarginTop" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"
+								visible="true"/>
+						</items>
+						<layoutData/>
+					</HBox>
+					<HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+						visible="true" displayInline="false">
+						<items>
+							<CheckBox text="Option B" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+								wrapping="false" useEntireWidth="true"/>
+							<ToolbarSpacer width="20px"/>
+							<!--<Text text="Long Description of Option" width="1140px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"-->
+							<!--	visible="true"/>-->
+							<Text text="Long Description of Option" class="sapUiTinyMarginTop" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"
+								visible="true"/>
+						</items>
+						<layoutData/>
+					</HBox>
+					<HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+						visible="true" displayInline="false">
+						<items>
+							<CheckBox text="Option C" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+								wrapping="false" useEntireWidth="true"/>
+							<ToolbarSpacer width="20px"/>
+							<!--<Text text="Long Description of Option" width="1140px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"-->
+							<!--	visible="true"/>-->
+							<Text text="Long Description of Option" class="sapUiTinyMarginTop" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"
+								visible="true"/>
+						</items>
+						<layoutData/>
+					</HBox>
+					<HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+						visible="true" displayInline="false">
+						<items>
+							<CheckBox text="Option D" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+								wrapping="false" useEntireWidth="true"/>
+							<ToolbarSpacer width="20px"/>
+							<!--<Text text="Long Description of Option" width="1140px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"-->
+							<!--	visible="true"/>-->
+							<Text text="Long Description of Option" class="sapUiTinyMarginTop" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"
+								visible="true"/>
+						</items>
+						<layoutData/>
+					</HBox>
+				</items>
+				<layoutData/>
+			</VBox>
+		<!--</l:content>-->
+	<!--</l:Grid>-->
+</core:FragmentDefinition>

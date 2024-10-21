@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+	<VBox alignItems="Stretch" direction="Column" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+		visible="true" displayInline="false">
+		<items>
+			<Slider min="0" max="100" value="50" step="1" enabled="true" visible="true" width="1255px" progress="true"/>
+		</items>
+		<layoutData/>
+	</VBox>
+</core:FragmentDefinition>

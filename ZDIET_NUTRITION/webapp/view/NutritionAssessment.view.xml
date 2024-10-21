@@ -1,0 +1,307 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.NutritionAssessment" xmlns="sap.m" xmlns:f="sap.f" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core">
+    <Page showHeader="true" title="Nutrition Assessment" showFooter="true" showNavButton="false">
+        <content>
+            <HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                <items>
+                    <f:Avatar src="" initials="" displayShape="Circle" displaySize="M" imageFitType="Cover"/>
+                    <ToolbarSpacer width="10px"/>
+                    <ObjectIdentifier title="Name" text="Amy Jackson" titleActive="false" visible="true"/>
+                    <ToolbarSpacer width="10px"/>
+                    <ObjectIdentifier title="DOB" text="22.01.1976" titleActive="false" visible="true"/>
+                    <ToolbarSpacer width="10px"/>
+                    <ObjectIdentifier title="Sex" text="Female" titleActive="false" visible="true"/>
+                    <ToolbarSpacer width="10px"/>
+                    <ObjectIdentifier title="Patient ID" text="100002101" titleActive="false" visible="true"/>
+                    <ToolbarSpacer width="10px"/>
+                </items>
+                <layoutData/>
+            </HBox>
+            <ScrollContainer horizontal="true" vertical="true" width="100%" height="887.9861450195312px" visible="true">
+                <content>
+                    <VBox alignItems="Stretch" direction="Column" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                        <items>
+                            <HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                                <items>
+                                    <TextArea rows="2" placeholder="Reason for Referral" cols="70" maxLength="0" wrapping="None" enabled="true" required="false" valueStateText="Invalid entry" visible="true" class="sapUiResponsiveMargin"/>
+                                    <TextArea rows="2" placeholder="External Medical Hisotry" cols="70" maxLength="0" wrapping="None" enabled="true" required="false" valueStateText="Invalid entry" visible="true" class="sapUiResponsiveMargin"/>
+                                </items>
+                                <layoutData/>
+                            </HBox>
+                            <HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                                <items>
+                                    <TextArea rows="2" placeholder="Subjective" cols="70" maxLength="0" wrapping="None" enabled="true" required="false" valueStateText="Invalid entry" visible="true" class="sapUiResponsiveMargin"/>
+                                    <TextArea rows="2" placeholder="External Medication" cols="70" maxLength="0" wrapping="None" enabled="true" required="false" valueStateText="Invalid entry" visible="true" class="sapUiResponsiveMargin"/>
+                                </items>
+                                <layoutData/>
+                            </HBox>
+                            <ScrollContainer horizontal="true" vertical="true" width="100%" height="181.9965362548828px" visible="true">
+                                <content>
+                                    <Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin">
+                                        <infoToolbar>
+                                            <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                                <content>
+                                                    <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </content>
+                                            </Toolbar>
+                                        </infoToolbar>
+                                        <headerToolbar>
+                                            <OverflowToolbar width="auto" height="auto" design="Transparent" visible="true" enabled="true">
+                                                <content>
+                                                    <Title text="Active Medication" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                                                    <ToolbarSpacer width=""/>
+                                                    <OverflowToolbarButton text="Sort" type="Transparent" icon="sap-icon://sort" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                    <OverflowToolbarButton text="Filter" type="Transparent" icon="sap-icon://filter" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                    <OverflowToolbarButton text="Group" type="Transparent" icon="sap-icon://group-2" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                    <OverflowToolbarButton text="Settings" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                </content>
+                                            </OverflowToolbar>
+                                        </headerToolbar>
+                                        <columns>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="ID" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Drug" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Dose" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Cycle" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                        </columns>
+                                        <items>
+                                            <ColumnListItem type="Active">
+                                                <cells>
+                                                    <Text text="Text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <Text text="Text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <Text text="Text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <Text text="Text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                                </content>
+                            </ScrollContainer>
+                            <ScrollContainer horizontal="true" vertical="true" width="100%" height="181.9965362548828px" visible="true">
+                                <content>
+                                    <Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin">
+                                        <infoToolbar>
+                                            <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                                <content>
+                                                    <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </content>
+                                            </Toolbar>
+                                        </infoToolbar>
+                                        <headerToolbar>
+                                            <OverflowToolbar width="auto" height="auto" design="Transparent" visible="true" enabled="true">
+                                                <content>
+                                                    <Title text="Diagnosis" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+                                                    <ToolbarSpacer width=""/>
+                                                    <OverflowToolbarButton text="Sort" type="Transparent" icon="sap-icon://sort" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                    <OverflowToolbarButton text="Filter" type="Transparent" icon="sap-icon://filter" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                    <OverflowToolbarButton text="Group" type="Transparent" icon="sap-icon://group-2" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                    <OverflowToolbarButton text="Settings" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                                                </content>
+                                            </OverflowToolbar>
+                                        </headerToolbar>
+                                        <columns>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="ID" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Diagnosis" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                            <Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                <header>
+                                                    <Text text="Remark" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </header>
+                                                <footer/>
+                                            </Column>
+                                        </columns>
+                                        <items>
+                                            <ColumnListItem type="Active">
+                                                <cells>
+                                                    <Text text="Text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <Text text="Text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <Text text="Text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                                </content>
+                            </ScrollContainer>
+                        </items>
+                        <layoutData/>
+                    </VBox>
+                    <HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                        <items>
+                            <Text text="Assessment" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                            <ToolbarSpacer width="10px"/>
+                            <SegmentedButton width="auto" enabled="true" visible="true">
+                                <items>
+                                    <SegmentedButtonItem text="underweight" width="auto" enabled="true"/>
+                                    <SegmentedButtonItem text="ideal weight" width="auto" enabled="true"/>
+                                    <SegmentedButtonItem text="Overweight" width="auto" enabled="true"/>
+                                </items>
+                            </SegmentedButton>
+                            <Input type="Number" description="BMR kcal/day" showValueHelp="false" enabled="true" visible="true" width="197.00000000px" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0" class="sapUiResponsiveMargin"/>
+                            <Input type="Number" description="Est Energy Req" showValueHelp="false" enabled="true" visible="true" width="226.9965362548828px" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0" class="sapUiResponsiveMargin"/>
+                            <Input type="Number" description="Protein g/day" showValueHelp="false" enabled="true" visible="true" width="197.98611450195312px" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0" class="sapUiResponsiveMargin"/>
+                        </items>
+                        <layoutData/>
+                    </HBox>
+                    <HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                        <items>
+                            <layout:VerticalLayout width="auto" visible="true" class="sapUiTinyMargin">
+                                <layout:content>
+                                    <ObjectListItem intro="BMI" title="" number="24.5" numberUnit="index" numberState="None" type="Active" selected="false" showMarkers="false">
+                                        <attributes/>
+                                        <firstStatus/>
+                                        <secondStatus/>
+                                    </ObjectListItem>
+                                </layout:content>
+                            </layout:VerticalLayout>
+                            <layout:VerticalLayout width="auto" visible="true" class="sapUiTinyMargin">
+                                <layout:content>
+                                    <ObjectListItem intro="Weight" title="" number="90" numberUnit="kg" numberState="None" type="Active" selected="false" showMarkers="false">
+                                        <attributes/>
+                                        <firstStatus/>
+                                        <secondStatus/>
+                                    </ObjectListItem>
+                                </layout:content>
+                            </layout:VerticalLayout>
+                            <layout:VerticalLayout width="auto" visible="true" class="sapUiTinyMargin">
+                                <layout:content>
+                                    <ObjectListItem intro="Height" title="" number="190" numberUnit="cm" numberState="None" type="Active" selected="false" showMarkers="false">
+                                        <attributes/>
+                                        <firstStatus/>
+                                        <secondStatus/>
+                                    </ObjectListItem>
+                                </layout:content>
+                            </layout:VerticalLayout>
+                            <layout:VerticalLayout width="auto" visible="true" class="sapUiTinyMargin">
+                                <layout:content>
+                                    <ObjectListItem intro="Diet Type" title="Normal" number="" numberUnit="index" numberState="None" type="Active" selected="false" showMarkers="false">
+                                        <attributes/>
+                                        <firstStatus/>
+                                        <secondStatus/>
+                                    </ObjectListItem>
+                                </layout:content>
+                            </layout:VerticalLayout>
+                            <layout:VerticalLayout width="auto" visible="true" class="sapUiTinyMargin">
+                                <layout:content>
+                                    <ObjectListItem intro="SP Diet Type I" title="" number="Regular" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+                                        <attributes/>
+                                        <firstStatus/>
+                                        <secondStatus/>
+                                    </ObjectListItem>
+                                </layout:content>
+                            </layout:VerticalLayout>
+                            <layout:VerticalLayout width="auto" visible="true" class="sapUiTinyMargin">
+                                <layout:content>
+                                    <ObjectListItem intro="SP Diet Type II" title="" number="NA" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+                                        <attributes/>
+                                        <firstStatus/>
+                                        <secondStatus/>
+                                    </ObjectListItem>
+                                </layout:content>
+                            </layout:VerticalLayout>
+                            <Input type="Number" description="Weight +/-" showValueHelp="false" enabled="true" visible="true" width="156.9965362548828px" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0" class="sapUiResponsiveMargin"/>
+                            <Input type="Number" description="in days" showValueHelp="false" enabled="true" visible="true" width="156.9965362548828px" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0" class="sapUiResponsiveMargin"/>
+                        </items>
+                        <layoutData/>
+                    </HBox>
+                    <TextArea rows="2" placeholder="Assessment Remark" cols="180" maxLength="0" wrapping="None" enabled="true" required="false" valueStateText="Invalid entry" visible="true"/>
+                    <List mode="None" width="100%" headerText="Alternative Diet Type Suggestion" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true">
+                        <infoToolbar/>
+                        <headerToolbar/>
+                        <items>
+                            <InputListItem label="Diet Type - Form" visible="true">
+                                <content>
+                                    <ComboBox placeholder="Select" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                        <items>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                        </items>
+                                    </ComboBox>
+                                </content>
+                            </InputListItem>
+                            <InputListItem label="Special Diet Type -  Conditions" visible="true">
+                                <content>
+                                    <ComboBox placeholder="Select" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                        <items>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                        </items>
+                                    </ComboBox>
+                                </content>
+                            </InputListItem>
+                            <InputListItem label="Special Diet Type - Instruction" visible="true">
+                                <content>
+                                    <ComboBox placeholder="Select" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                        <items>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                        </items>
+                                    </ComboBox>
+                                </content>
+                            </InputListItem>
+                            <InputListItem label="Person Responsible" visible="true">
+                                <content>
+                                    <ComboBox placeholder="Select" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                        <items>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                            <core:Item text="Item" enabled="true" key="Item"/>
+                                        </items>
+                                    </ComboBox>
+                                </content>
+                            </InputListItem>
+                            <InputListItem label="Documentate Date" visible="true">
+                                <content>
+                                    <DatePicker width="auto" displayFormat="medium" required="false" valueStateText="Invalid entry" enabled="true" visible="true" valueFormat="yyyyMMdd"/>
+                                </content>
+                            </InputListItem>
+                        </items>
+                    </List>
+                    <TextArea rows="2" placeholder="Special Instruction / Remark" cols="180" maxLength="0" wrapping="None" enabled="true" required="false" valueStateText="Invalid entry" visible="true"/>
+                </content>
+            </ScrollContainer>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <Button text="Dynamic Assessment" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+	<ActionSheet placement="Top">
+		<Button text="Print Form" icon="sap-icon://print" press="onDownload" visible="{oJMdlAFR>/toButtons/DownloadForm}"/>
+		<Button text="Diet Type Assignment" icon="sap-icon://electronic-medical-record" press="._onRouteToDietTypeAssignment" class="sapUiTinyMarginEnd"/>
+		<Button text="Nutrition Assessment" icon="sap-icon://clinical-task-tracker" press="._onRouteToNutritionAssessment" class="sapUiTinyMarginEnd"/>
+		<Button text="Nutrition Estimation" icon="sap-icon://electrocardiogram" press="._onRouteToNutritionEstimation" class="sapUiTinyMarginEnd"/>
+	</ActionSheet>
+</core:FragmentDefinition>

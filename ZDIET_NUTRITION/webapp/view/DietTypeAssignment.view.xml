@@ -1,0 +1,341 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.DietTypeAssignment" xmlns="sap.m"
+	xmlns:f="sap.f" xmlns:core="sap.ui.core">
+	<Page showHeader="true" title="Diet Type Assignement" showFooter="true" showNavButton="false">
+		<content>
+			<HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+				visible="true" displayInline="false">
+				<items>
+					<f:Avatar src="" initials="" displayShape="Circle" displaySize="M" imageFitType="Cover"/>
+					<ToolbarSpacer width="10px"/>
+					<ObjectIdentifier title="Name" text="Amy Jackson" titleActive="false" visible="true"/>
+					<ToolbarSpacer width="10px"/>
+					<ObjectIdentifier title="DOB" text="22.01.1976" titleActive="false" visible="true"/>
+					<ToolbarSpacer width="10px"/>
+					<ObjectIdentifier title="Sex" text="Female" titleActive="false" visible="true"/>
+					<ToolbarSpacer width="10px"/>
+					<ObjectIdentifier title="Patient ID" text="100002101" titleActive="false" visible="true"/>
+					<ToolbarSpacer width="10px"/>
+				</items>
+				<layoutData/>
+			</HBox>
+			<IconTabBar expandable="false" expanded="true" applyContentPadding="false" backgroundDesign="Solid" upperCase="false" visible="true"
+				selectedKey="Ok">
+				<items>
+					<IconTabFilter icon="sap-icon://hint" iconColor="Positive" text="Diet Type" count="" design="Vertical" showAll="false"
+						textDirection="Inherit" enabled="true" visible="true" iconDensityAware="false">
+						<content>
+							<List mode="None" width="100%" headerText="Diet Type Assignment" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true"
+								growingThreshold="20" growingScrollToLoad="true">
+								<infoToolbar/>
+								<headerToolbar/>
+								<items>
+									<InputListItem label="Diet Type - Form" visible="true">
+										<content>
+											<ComboBox placeholder="Select" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+												<items>
+													<core:Item text="Item" enabled="true" key="Item"/>
+													<core:Item text="Item" enabled="true" key="Item"/>
+													<core:Item text="Item" enabled="true" key="Item"/>
+												</items>
+											</ComboBox>
+										</content>
+									</InputListItem>
+									<InputListItem label="Special Diet Type - Conditions" visible="true">
+										<content>
+											<ComboBox placeholder="Select" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+												<items>
+													<core:Item text="Item" enabled="true" key="Item"/>
+													<core:Item text="Item" enabled="true" key="Item"/>
+													<core:Item text="Item" enabled="true" key="Item"/>
+												</items>
+											</ComboBox>
+										</content>
+									</InputListItem>
+									<InputListItem label="Special Diet Type - Instruction" visible="true">
+										<content>
+											<ComboBox placeholder="Select" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+												<items>
+													<core:Item text="Item" enabled="true" key="Item"/>
+													<core:Item text="Item" enabled="true" key="Item"/>
+													<core:Item text="Item" enabled="true" key="Item"/>
+												</items>
+											</ComboBox>
+										</content>
+									</InputListItem>
+									<InputListItem label="Person Responsible" visible="true">
+										<content>
+											<ComboBox placeholder="Select" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+												<items>
+													<core:Item text="Item" enabled="true" key="Item"/>
+													<core:Item text="Item" enabled="true" key="Item"/>
+													<core:Item text="Item" enabled="true" key="Item"/>
+												</items>
+											</ComboBox>
+										</content>
+									</InputListItem>
+									<InputListItem label="Documentate Date" visible="true">
+										<content>
+											<DatePicker width="auto" displayFormat="medium" required="false" valueStateText="Invalid entry" enabled="true" visible="true"
+												valueFormat="yyyyMMdd"/>
+										</content>
+									</InputListItem>
+								</items>
+							</List>
+							<ScrollContainer horizontal="true" vertical="true" width="100%" height="300px" visible="true">
+								<content>
+									<TextArea value="Special Instruction and Remark" rows="20" cols="200" wrapping="Soft" enabled="true" required="false"
+										valueStateText="Invalid entry" visible="true"/>
+								</content>
+							</ScrollContainer>
+							<ScrollContainer horizontal="true" vertical="true" width="100%" height="300px" visible="true">
+								<content>
+									<Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true"
+										class="sapUiResponsiveMargin" items="{path:'/old_diet_typeSet', templateShareable:true}">
+										<infoToolbar>
+											<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+												<content>
+													<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</content>
+											</Toolbar>
+										</infoToolbar>
+										<headerToolbar>
+											<OverflowToolbar width="auto" height="auto" design="Transparent" visible="true" enabled="true">
+												<content>
+													<Title text="Items (3)" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+													<ToolbarSpacer width=""/>
+													<OverflowToolbarButton text="Sort" type="Transparent" icon="sap-icon://sort" iconFirst="true" width="auto" enabled="true" visible="true"
+														iconDensityAware="false"/>
+													<OverflowToolbarButton text="Filter" type="Transparent" icon="sap-icon://filter" iconFirst="true" width="auto" enabled="true" visible="true"
+														iconDensityAware="false"/>
+													<OverflowToolbarButton text="Group" type="Transparent" icon="sap-icon://group-2" iconFirst="true" width="auto" enabled="true" visible="true"
+														iconDensityAware="false"/>
+													<OverflowToolbarButton text="Settings" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true"
+														visible="true" iconDensityAware="false"/>
+												</content>
+											</OverflowToolbar>
+										</headerToolbar>
+										<columns>
+											<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+												<header>
+													<Text text="Document ID" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</header>
+												<footer/>
+											</Column>
+											<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+												<header>
+													<Text text="Date" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</header>
+												<footer/>
+											</Column>
+											<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+												<header>
+													<Text text="Diet Type" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</header>
+												<footer/>
+											</Column>
+											<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+												<header>
+													<Text text="Special Diet Type 1" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</header>
+												<footer/>
+											</Column>
+											<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+												<header>
+													<Text text="Special Diet Type 2" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</header>
+												<footer/>
+											</Column>
+											<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+												<header>
+													<Text text="Person Responsible" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</header>
+												<footer/>
+											</Column>
+											<Column width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+												<header>
+													<Text text="Long Text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+												</header>
+												<footer/>
+											</Column>
+										</columns>
+										<items>
+											<ColumnListItem type="Active">
+												<cells>
+													<Text text="{ID}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													<Text text="{path: 'Date', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, style: 'short' }}" width="auto" maxLines="1"
+														wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													<Text text="{DT1}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													<Text text="{DT2}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													<Text text="{DT3}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													<Text text="{PRID}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+													<CheckBox text="" selected="true" editable="false" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false"
+														useEntireWidth="true"/>
+												</cells>
+											</ColumnListItem>
+										</items>
+									</Table>
+								</content>
+							</ScrollContainer>
+						</content>
+					</IconTabFilter>
+					<IconTabSeparator icon="" iconDensityAware="false"/>
+					<IconTabFilter iconColor="Neutral" text="Food Preference" count="" design="Vertical" showAll="false" textDirection="Inherit" enabled="true"
+						visible="true" iconDensityAware="false">
+						<content>
+							<ScrollContainer horizontal="true" vertical="true" width="100%" height="777.9861450195312px" visible="true">
+								<content>
+									<ToggleButton pressed="false" text="Open All" iconFirst="true" width="auto" enabled="true" visible="true"/>
+									<Panel height="auto" width="100%" headerText="Drink Peference" expandable="true" expanded="true" expandAnimation="true"
+										backgroundDesign="Solid">
+										<content>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+										</content>
+									</Panel>
+									<Panel height="auto" width="100%" headerText="Meat Peference" expandable="true" expanded="true" expandAnimation="true"
+										backgroundDesign="Solid">
+										<content>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+										</content>
+									</Panel>
+									<Panel height="auto" width="100%" headerText="Vegetable Peference" expandable="true" expanded="true" expandAnimation="true"
+										backgroundDesign="Solid">
+										<content>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+										</content>
+									</Panel>
+									<Panel height="auto" width="100%" headerText="Egg Peference" expandable="true" expanded="true" expandAnimation="true"
+										backgroundDesign="Solid">
+										<content>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+										</content>
+									</Panel>
+									<Panel height="auto" width="100%" headerText="Taste Peference" expandable="true" expanded="true" expandAnimation="true"
+										backgroundDesign="Solid">
+										<content>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+											<CheckBox text="Checkbox Text" selected="true" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit"
+												wrapping="false" useEntireWidth="true"/>
+										</content>
+									</Panel>
+								</content>
+							</ScrollContainer>
+						</content>
+					</IconTabFilter>
+					<IconTabSeparator icon="" iconDensityAware="false"/>
+					<IconTabFilter icon="sap-icon://notes" iconColor="Neutral" text="" count="3" design="Vertical" showAll="false" textDirection="Inherit"
+						enabled="true" visible="true" iconDensityAware="false">
+						<content>
+							<Text text="Notes go here ..." width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</content>
+					</IconTabFilter>
+				</items>
+				<content/>
+			</IconTabBar>
+		</content>
+		<footer>
+			<OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+				<content>
+					<ToolbarSpacer width=""/>
+					<Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+					<Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+				</content>
+			</OverflowToolbar>
+		</footer>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>

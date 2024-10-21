@@ -1,0 +1,21 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="f6566a9acf8d4d381a7f8d36" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityContainer Name="f6566a9acf8d4d381a7f8d36_Entities" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="old_diet_typeSet" EntityType="f6566a9acf8d4d381a7f8d36.old_diet_type" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+            </EntityContainer>
+            <EntityType Name="old_diet_type">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Date" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date" sap:label="Date"/>
+                <Property Name="DT1" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DT1"/>
+                <Property Name="DT2" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DT2"/>
+                <Property Name="DT3" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DefaultName"/>
+                <Property Name="PRID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PRID"/>
+                <Property Name="LT_IND" Type="Edm.Single" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="LT_IND"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

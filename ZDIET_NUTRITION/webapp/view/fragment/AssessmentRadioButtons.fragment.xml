@@ -1,0 +1,19 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+	<VBox alignItems="Stretch" direction="Column" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+		visible="true" displayInline="false">
+		<items>
+			<RadioButtonGroup
+				id="sap_Responsive_Page_0-content-sap_m_ScrollContainer-1711617373644-content-sap_m_ScrollContainer-1711619630339-content-sap_m_VBox-2-items-sap_m_RadioButtonGroup-1"
+				columns="1" selectedIndex="0" valueState="None" width="auto" editable="true" enabled="true" textDirection="Inherit"
+				select="_onRadioButtonGroupSelect">
+				<buttons>
+					<RadioButton text="Option 1" editable="true" enabled="true" visible="true" width="auto" valueState="None" selected="false"/>
+					<RadioButton text="Option 2" editable="true" enabled="true" visible="true" width="auto" valueState="None" selected="false"/>
+					<RadioButton text="Option 3" editable="true" enabled="true" visible="true" width="auto" valueState="None" selected="false"/>
+					<RadioButton text="Option 4" editable="true" enabled="true" visible="true" width="auto" valueState="None" selected="false"/>
+				</buttons>
+			</RadioButtonGroup>
+		</items>
+		<layoutData/>
+	</VBox>
+</core:FragmentDefinition>

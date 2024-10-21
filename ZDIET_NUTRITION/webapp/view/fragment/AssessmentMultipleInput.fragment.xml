@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+	<VBox alignItems="Stretch" direction="Column" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+		visible="true" displayInline="false">
+		<items>
+			<MultiInput maxTokens="5" enableMultiLineMode="false" showValueHelp="false" enabled="true" visible="true" required="false"
+				valueStateText="Invalid entry" width="1242.9862060546875px" valueHelpOnly="false" maxLength="0">
+				<tokens>
+					<Token text="Value 1" editable="false" selected="false"/>
+					<Token text="Value 1" editable="false" selected="false"/>
+					<Token text="Value 1" editable="false" selected="false"/>
+				</tokens>
+			</MultiInput>
+		</items>
+		<layoutData/>
+	</VBox>
+</core:FragmentDefinition>

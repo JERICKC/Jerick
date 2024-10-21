@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml">
+	<VBox alignItems="Stretch" direction="Column" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+		visible="true" displayInline="false">
+		<items>
+			<HBox alignItems="Stretch" direction="Row" fitContainer="false" width="auto" height="auto" justifyContent="Start" renderType="Div"
+				visible="true" displayInline="false">
+				<items>
+					<DateRangeSelection width="auto" displayFormat="medium" required="false" valueStateText="Invalid entry" enabled="true" visible="true"
+						change="_onDateRangeSelectionChange"/>
+					<DatePicker width="auto" displayFormat="medium" required="false" valueStateText="Invalid entry" enabled="true" visible="true"
+						valueFormat="yyyyMMdd"/>
+				</items>
+				<layoutData/>
+			</HBox>
+		</items>
+		<layoutData/>
+	</VBox>
+</core:FragmentDefinition>
